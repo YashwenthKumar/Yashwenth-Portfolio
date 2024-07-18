@@ -4,9 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
+
+            <style>
+                .back{
+                    text-align: center;
+                    color: red;
+                }
+                body{
+                    background-color: aqua;
+                }
+            </style>
+        
     </head>
     <body>
-        <h1>Welcome to my Portfolio</h1>
+        <header>
+            <h1 class="back">Welcome to my Portfolio</h1>
         <a>
             <button>
                 About
@@ -28,21 +40,49 @@
             </button>
         </a>
 
-            <h2>Yashwenth puchala</h2>
-            <img src="" alt="">
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>Yashwenth puchala</h2>
+            <img src="me1.jpg" height="500px" alt="This is image of me.">
                 <p>
                 I am a passionate web developer currenty pursuing my education in <em>SRM University AP</em>.<br>
                 I learned Web development from <strong>Code with Swaroop</strong>.<br>
             </p>
+            </section>
 
-        <h2>My Skills</h2>
+            <section id="skills">
+                <h2>My Skills</h2>
         <ol>
             <li>C Basics</li>
             <li>Python Basics</li>
             <li>Frontend development</li>
         </ol>
+            </section>
 
-        <h1>Contact Me:</h1>
+            <section id="projects">
+                <h1>My Projects:</h1>
+                <table border="1">
+                    <tr>
+                        <th>Projects</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Portfolio website</td>
+                        <td>I built a website for showcasing my skills using HTML and CSS </td>
+                    </tr>
+                    <tr>
+                        <td>Python Simple Calculator</td>
+                        <td>I built a simple calculator using pthon</td>
+                    </tr>
+                    
+                </table>
+        
+            </section>
+
+            <section id="contact">
+                <h1>Contact Me:</h1>
         <p>Feel free to get in touch with me using the form below:</p>
         <form>
             <label for="name"> Name: </label>
@@ -64,9 +104,12 @@
             <label for="bio">Bio(upto 200 words):</label> <br>
             <textarea id="bio"></textarea> <br>
             <button type="submit">Submit</button> <br>
+            </section>
+        </main>
 
-            
-
-        </form>
+        <footer>
+            <p>@2024 portfolio</p>
+        </footer>
+        
     </body>
     </html>
